@@ -4,6 +4,8 @@ import { useEffect } from "react"
 
 
 
+
+
 const UsersForm =({addUser , userSelected , editUser})=>{
 
     const{register , handleSubmit , reset}= useForm()
@@ -40,7 +42,7 @@ const UsersForm =({addUser , userSelected , editUser})=>{
             <div className="titles">
                  <h1>Registrar</h1>
                  { <img src="./agregar-usuario.png" alt="" className="imagin"/>}
-
+          
             </div>
             
             <div className="input-container">
@@ -88,7 +90,7 @@ const UsersForm =({addUser , userSelected , editUser})=>{
                 {...register("birthday",{required : true})}
                  />
             </div> 
-            <button>Registrar</button>
+            <button className="btn-ok">Registrar</button>
             
              
         </form>

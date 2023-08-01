@@ -2,13 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+     
   }
   
   body {
-   
+    background-image:url('./constelacion.jpg') ;
     padding: 2rem;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+
   }
   
   .container {
@@ -21,6 +24,7 @@
     padding: 1.5rem;
     border: 1px solid darkgray;
     border-radius: 0.5rem;
+    background-color: beige;
   }
   
   .input-container {
@@ -40,6 +44,10 @@
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    
   }
   
   form button {
@@ -55,7 +63,7 @@
   
   section ul {
     list-style: none;
-    width: 100%;
+    width: 80%;
   }
   
   section ul li {
@@ -63,6 +71,12 @@
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
     border-radius: 0.5rem;
     margin-bottom: 1rem;
+  }
+
+  .users-box{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(244, 244, 238, 0.893);
   }
   
   .imagin{
@@ -76,3 +90,30 @@
     align-items: center;
     margin-bottom: 10px;
   }
+
+  .btn-section{
+    margin-left: 160px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 8px;
+  }
+
+  .btn-drop{
+    background-image:url('./drop.png');
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-size: 40px , 40px;
+    align-items: center;
+  }
+
+  .btn-edit{
+    background-image:url('./editar.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 40px , 40px;
+  }
+
+  .font-li h3{
+    font-size: small;
+  }
+
